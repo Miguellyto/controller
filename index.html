@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Controller</title>
+    <title>Filial</title>
     <!-- <link rel="shortcut icon" href="../static/imagem/csv-icon.png"> -->
     <link rel="shortcut icon" href="logo.png">
 
@@ -31,13 +31,13 @@ else if(form1.unidade.value == ""){
 	form1.unidade.focus();
 return false;
 }
-else{
-    alert("Cadastro Realizado com Sucesso. \n Estamos Analizando!");
-}
+// else{
+//     alert("Cadastro Realizado com Sucesso. \n Estamos Analizando!");
+// }
 }
 
 function cadastro(){
-alert('Cadastro Realizado com Sucesso. \n Estamos Analizando!');
+alert('Cadastro Realizado com Sucesso!');
 }
 
 </script>
@@ -99,6 +99,7 @@ form {
  </head>
 
   <body>
+    <!-- <nav class="navbar navbar-light bg-light"> -->
     <nav class="navbar navbar-default">
   <div class="container-fluid">
      <!-- Brand and toggle get grouped for better mobile display -->
@@ -114,10 +115,10 @@ form {
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-		<li><a href="https://www.lasereletro.com.br/">Início <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Filial <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Cadastro2</a></li>
-		 <li><a href="#">Cadastro3</a></li>
+		<li><a href="#">Início <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Cadastrar<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Listar</a></li>
+		 <li><a href="#">Editar</a></li>
         <!-- <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ofertas do dia<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -129,7 +130,8 @@ form {
         </li> -->
       </ul>
        <ul class="nav navbar-nav navbar-right">
-        <li><a href="https://www.lasereletro.com.br/login?ReturnUrl=%2f_secure%2faccount" target="_blank">Login</a></li>
+        <li><a href="#">Sair</a></li>
+        <!-- <li><a href="#" target="_blank">Sair</a></li> -->
         <!-- <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Meus Pedidos <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -265,7 +267,14 @@ z-index:1000;"
  <div class="form-group">
    <label class="col-md-4 control-label" for="nomeg">Fone Gerência</label>  
  <div class="col-md-4">
-<input id="foneg" name="foneg" class="form-control input-md" placeholder="Telefone Gerência" required="" type="tel"maxlength="15">
+<input id="fone" name="fone" class="form-control input-md" placeholder="Telefone Gerência" required="" type="tel"maxlength="15">
+ </div>
+ </div>
+ 
+ <div class="form-group">
+   <label class="col-md-4 control-label" for="nomeg">Status</label>  
+ <div class="col-md-4">
+<input id="status" name="status" class="form-control input-md" placeholder="Status" required="">
  </div>
  </div>
  
@@ -324,10 +333,7 @@ z-index:1000;"
  </div>
  </div>
 
- <!-- Ao informar meus dados, eu concordo com a <a href="#">Política de Privacidade</a>. -->
-   </fieldset>
  </form>
- 
  </div>
 
   </body>
